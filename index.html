@@ -1,79 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="container">
-        <h1 class="logo">Portfolio</h1>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="burger" onclick="toggleNav()">
-          <span></span>
-          <span></span>
-          <span></span>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Manegement</title>
+  </head>
+  <body>
+
+    <div class="heading">
+        <h1>Attendence Manegement System</h1>
+    </div>
+    <h1 id="school">Masai School </h1>
+
+    <div class="login" >
+        <div class="image">
+            <img src="./R.jfif" alt="">
         </div>
-      </div>
-    </nav>
-  </header>
-
-  <section id="hero">
-    <div class="container">
-      <h2>Hi, I'm John Doe</h2>
-      <p>Front-end Developer | UI/UX Designer</p>
-      <a href="#contact" class="btn">Contact Me</a>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet ex sit amet ex ullamcorper, et eleifend metus tempor.</p>
-      <p>Curabitur feugiat commodo faucibus. Morbi ut risus nibh. Mauris laoreet purus purus, eu dapibus elit vulputate eget.</p>
-    </div>
-  </section>
-
-  <section id="portfolio">
-    <div class="container">
-      <h2>Portfolio</h2>
-      <div class="project-card">
-        <img src="img1.jfif" alt="Project 1">
-        <div class="project-info">
-          <h3>Project 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <a href="#">View Project</a>
+        <div class="right">
+            <h2 class="login_head">Teacher login </h2>
+            <form action="" id="form">
+                <input type="text" id="name" placeholder="username">
+                <input type="password" id="password" placeholder="Password">
+                
+                    <input type="submit" class="btn btn-warning" id="submit" value="Submit">
+            </form>
         </div>
-      </div>
-      <div class="project-card">
-        <img src="img2.jfif" alt="Project 2">
-        <div class="project-info">
-          <h3>Project 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <a href="#">View Project</a>
-        </div>
-      </div>
     </div>
-  </section>
 
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form>
-        <input type="text" placeholder="Name" required>
-        <input type="email" placeholder="Email" required>
-        <textarea placeholder="Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+  </body>
 </html>
